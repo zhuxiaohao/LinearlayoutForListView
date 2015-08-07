@@ -1,0 +1,263 @@
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                              xmlns:app="http://schemas.android.com/apk/res-auto"
+                                              android:id="@+id/swipeRefreshLayout"
+                                              android:layout_width="match_parent"
+                                              android:layout_height="match_parent" >
+
+    <zhuxiaohao.com.cn.slidingtabforlistview.custom.CustomScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/view_top_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="112dp"
+                    android:background="@android:color/white"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="102dp"
+                        android:orientation="horizontal" >
+
+                        <LinearLayout
+                            android:id="@+id/linear_evaluation_symbol"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:id="@+id/txt_evaluation_teaching"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="4.95"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/txt_evaluation_symbol"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="教学口碑分" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:background="#dbdcdd"
+                            android:gravity="center" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical" >
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal" >
+
+                                <TextView
+                                    android:id="@+id/txt_evaluation_ranking"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="15"
+                                    android:textSize="20sp" />
+
+                                <TextView
+                                    android:id="@+id/txt_evalutaion_symbol"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="th" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/txt_evaluaion_areaname"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="杭州口碑排名" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/view_not_top"
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:background="#eceff5" />
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/placeholder"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    android:orientation="vertical" >
+
+                    <zhuxiaohao.com.cn.slidingtabforlistview.custom.LinearListView
+                        android:id="@+id/view_listview_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:divider="#f00"
+                        android:orientation="vertical"
+                        android:showDividers="middle"
+                        app:dividerThickness="16dp" />
+
+                    <LinearLayout
+                        android:id="@+id/view_listview_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/white"
+                        android:orientation="vertical"
+                        android:visibility="gone" >
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/view_listview_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/white"
+                        android:orientation="vertical"
+                        android:visibility="gone" >
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/line_top_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_gravity="center"
+                    android:background="@android:color/white"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:id="@+id/linear_me_all"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/btn_evaluation_all_one"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="全部评价"
+                            android:textColor="@android:color/black" />
+
+                        <TextView
+                            android:id="@+id/btn_evaluation_all_two"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="252"
+                            android:textColor="@android:color/black"
+                            android:visibility="visible" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="30dp"
+                        android:background="#dbdcdd" />
+
+                    <LinearLayout
+                        android:id="@+id/linear_me_reply"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/btn_evaluation_to_reply_one"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="待回复"
+                            android:textColor="@android:color/black" />
+
+                        <TextView
+                            android:id="@+id/btn_evaluation_to_reply_two"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="252"
+                            android:textColor="@android:color/black"
+                            android:visibility="visible" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="30dp"
+                        android:background="#dbdcdd" />
+
+                    <LinearLayout
+                        android:id="@+id/linear_me_has"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/btn_evaluation_has_reply_one"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="已回复"
+                            android:textColor="@android:color/black" />
+
+                        <TextView
+                            android:id="@+id/btn_evaluation_has_reply_two"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="252"
+                            android:textColor="@android:color/black"
+                            android:visibility="visible" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/iv_current"
+                    android:layout_width="122dp"
+                    android:layout_height="2dp"
+                    android:background="#2b79dc"
+                    android:visibility="gone" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#e7e8e9"
+                    android:visibility="visible" />
+            </LinearLayout>
+        </FrameLayout>
+    </zhuxiaohao.com.cn.slidingtabforlistview.custom.CustomScrollView>
+
+</android.support.v4.widget.SwipeRefreshLayout>
