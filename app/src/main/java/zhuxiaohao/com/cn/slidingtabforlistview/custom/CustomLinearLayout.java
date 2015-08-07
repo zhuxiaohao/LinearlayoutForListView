@@ -14,6 +14,7 @@ import android.widget.LinearLayout;
  * Date:15/8/7上午12:2608
  * blog:http://blog.csdn.net/qq718799510?viewmode=contents
  * Copyright (c) 2015, zhuxiaohao All Rights Reserved.
+ * 我测试哈子
  */
 public class CustomLinearLayout extends LinearLayout {
     private static final int[] R_styleable_LinearLayout = new int[] {
