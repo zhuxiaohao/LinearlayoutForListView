@@ -21,31 +21,25 @@ public class MainActivity extends Activity implements Callbacks, OnClickListener
     private View mPlaceholderView;
     private SwipeRefreshLayout swipeRefreshLayout;
     private TestAdapter madapter;
-    /**
-     * listview 所需要的视图
-     */
-    private LayoutInflater inflater;// 视图
-    private LinearListView view_listview_1;// 加载 listview 视图 view
-    private LinearLayout view_listview_2;// 加载 listview 视图 view
-    private LinearLayout view_listview_3;// 加载 listview 视图 view
+    private LayoutInflater inflater;//view
 
+    private LinearListView view_listview_1;
+    private LinearLayout view_listview_2;
+    private LinearLayout view_listview_3;
+    // tab view
+    private LinearLayout line_top_view;
     /**
-     *
-     */
-    private LinearLayout line_top_view;// tab view
-    /**
-     * tab 点击事件
+     * tab listener
      */
     private LinearLayout linear_me_all;
     private LinearLayout linear_me_reply;
     private LinearLayout linear_me_has;
 
-    /** 头部 view */
+    /** top view */
     private LinearLayout view_top_view;
 
-    /***/
     private android.content.Context context;
-    /** 视图 */
+    /** inflater */
     private LayoutInflater minflater;
 
     @Override
@@ -66,15 +60,14 @@ public class MainActivity extends Activity implements Callbacks, OnClickListener
 
     }
 
+
     /**
-     * initView:(初始化). <br/>
+     * initView:(initView). <br/>
      *
      * @author zhuxiaohao
      */
-    @SuppressWarnings("deprecation")
     private void initView() {
         swipeRefreshLayout = (SwipeRefreshLayout) findViewById(R.id.swipeRefreshLayout);
-        // 顶部刷新的样式
         swipeRefreshLayout.setColorScheme(color.holo_red_light, color.holo_green_light, color.holo_blue_bright, color.holo_orange_light);
         view_listview_1 = (LinearListView) findViewById(R.id.view_listview_1);
         view_listview_1.setDividerDrawable(new android.graphics.drawable.ColorDrawable(android.graphics.Color.CYAN));
@@ -103,7 +96,6 @@ public class MainActivity extends Activity implements Callbacks, OnClickListener
         });
     }
 
-    // 初始化监听
     private void initListener() {
         mObservableScrollView.setCallbacks(this);
         linear_me_all.setOnClickListener(this);
@@ -133,13 +125,13 @@ public class MainActivity extends Activity implements Callbacks, OnClickListener
     @Override
     public void onClick(View v) {
         if (v == linear_me_all) {
-            Toast.makeText(MainActivity.this, "第一个 tab", Toast.LENGTH_SHORT).show();
+            Toast.makeText(MainActivity.this, " first one tab", Toast.LENGTH_SHORT).show();
         }
         if (v == linear_me_reply) {
-            Toast.makeText(MainActivity.this, "第2个 tab", Toast.LENGTH_SHORT).show();
+            Toast.makeText(MainActivity.this, " first two tab", Toast.LENGTH_SHORT).show();
         }
         if (v == linear_me_has) {
-            Toast.makeText(MainActivity.this, "第3个 tab", Toast.LENGTH_SHORT).show();
+            Toast.makeText(MainActivity.this, " first three tab", Toast.LENGTH_SHORT).show();
         }
     }
     OnItemClickListener mListener = new OnItemClickListener() {

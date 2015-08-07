@@ -47,10 +47,9 @@
                                 android:textSize="20sp" />
 
                             <TextView
-                                android:id="@+id/txt_evaluation_symbol"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="教学口碑分" />
+                                android:text="Top_one" />
                         </LinearLayout>
 
                         <View
@@ -88,15 +87,13 @@
                             </LinearLayout>
 
                             <TextView
-                                android:id="@+id/txt_evaluaion_areaname"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="杭州口碑排名" />
+                                android:text="Top_two" />
                         </LinearLayout>
                     </LinearLayout>
 
                     <View
-                        android:id="@+id/view_not_top"
                         android:layout_width="match_parent"
                         android:layout_height="10dp"
                         android:background="#eceff5" />
@@ -169,14 +166,13 @@
                             android:id="@+id/btn_evaluation_all_one"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="全部评价"
+                            android:text="Tab_one"
                             android:textColor="@android:color/black" />
 
                         <TextView
                             android:id="@+id/btn_evaluation_all_two"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="252"
                             android:textColor="@android:color/black"
                             android:visibility="visible" />
                     </LinearLayout>
@@ -195,17 +191,14 @@
                         android:orientation="vertical" >
 
                         <TextView
-                            android:id="@+id/btn_evaluation_to_reply_one"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="待回复"
+                            android:text="Tab_two"
                             android:textColor="@android:color/black" />
 
                         <TextView
-                            android:id="@+id/btn_evaluation_to_reply_two"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="252"
                             android:textColor="@android:color/black"
                             android:visibility="visible" />
                     </LinearLayout>
@@ -229,7 +222,7 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
                             android:gravity="center"
-                            android:text="已回复"
+                            android:text="Tab_three"
                             android:textColor="@android:color/black" />
 
                         <TextView
@@ -238,7 +231,6 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
                             android:gravity="center"
-                            android:text="252"
                             android:textColor="@android:color/black"
                             android:visibility="visible" />
                     </LinearLayout>

@@ -52,6 +52,9 @@ public class CustomScrollView extends ScrollView {
         mCallbacks = listener;
     }
 
+    /**
+     * Callback  is interface
+     */
     public static interface Callbacks {
         public void onScrollChanged(int scrollY);
         public void onDownMotionEvent();

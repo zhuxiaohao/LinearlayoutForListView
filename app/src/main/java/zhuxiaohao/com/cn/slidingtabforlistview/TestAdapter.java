@@ -14,9 +14,7 @@ import android.widget.TextView;
  * Copyright (c) 2015, zhuxiaohao All Rights Reserved.
  */
 public class TestAdapter  extends BaseAdapter {
-    /** 视图 */
     private android.view.LayoutInflater minflater;
-    /** 上下文 */
     private android.content.Context mcontext;
 
     public TestAdapter(android.content.Context context, java.util.List<? extends Object> list) {
@@ -66,27 +64,16 @@ public class TestAdapter  extends BaseAdapter {
     }
 
     public static class ViewHolder {
-        /** 图像 */
         private ImageView iv_evaluation_userimageview;
-        /** 姓名 */
         private TextView txt_evalutaion_username;
-        /** 星星 */
         private LinearLayout linear_evalutaion_start;
-        /** 回复按钮 */
         private TextView txt_evalutaion_reply;
-        /** 科目 */
         private TextView txt_evaluation_class_name;
-        /** 课程类型 */
         private TextView txt_evaluation_class_type;
-        /** 时间 */
         private TextView txt_evaluation_class_time;
-        /** 评论内容 */
         private TextView txt_evaluation_class_content;
-        /** 如果有回复的内容 */
         private LinearLayout linear_reply;
-        /** 老师名字 */
         private TextView txt_evaluation_teacher_reply;
-        /** 老师回复内容 */
         private TextView txt_evaluation_content;
     }
 }
